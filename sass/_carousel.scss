@@ -1,0 +1,11 @@
+.carousel__text {
+    grid-row: 4 / 5;
+    grid-column: 1 / center-1;
+
+    background: var(--color-beige);
+}
+
+.carousel__image {
+    grid-row: 4 / 5;
+    grid-column: center-1 / -1;
+}

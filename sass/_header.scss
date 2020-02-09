@@ -1,0 +1,6 @@
+.header {
+    grid-row: 1 / 2;
+    grid-column: header-start / header-end;
+
+    background: var(--color-light);
+}
