@@ -63,4 +63,9 @@
 .carousel__image {
     grid-row: 4 / 5;
     grid-column: center-1 / -1;
+
+    background-image: url('/images/Carousel-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
