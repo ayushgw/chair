@@ -150,23 +150,25 @@ a:visited {
     justify-content: space-between;
     align-items: center;
     margin: 10rem 0; }
-  .ingrid .chairs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    grid-gap: 3rem;
-    justify-items: stretch; }
-  .ingrid .chair {
-    background-color: var(--color-light);
-    display: grid;
-    grid-gap: 6rem;
-    justify-items: center; }
-    .ingrid .chair h4 {
-      margin-top: 8rem; }
-    .ingrid .chair__img {
-      width: 48%;
-      margin: 0 auto; }
-    .ingrid .chair a {
-      margin-bottom: 8rem; }
+
+.chairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 3rem;
+  justify-items: stretch; }
+
+.chair {
+  background-color: var(--color-light);
+  display: grid;
+  grid-gap: 6rem;
+  justify-items: center; }
+  .chair h4 {
+    margin-top: 8rem; }
+  .chair__img {
+    width: 48%;
+    margin: 0 auto; }
+  .chair a {
+    margin-bottom: 8rem; }
 
 .carousel__text {
   grid-row: 4 / 5;
@@ -248,7 +250,13 @@ a:visited {
 
 .models {
   grid-row: 6 / 7;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin-bottom: 20rem; }
+  .models__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0; }
 
 .footer {
   grid-row: 7 / 8;

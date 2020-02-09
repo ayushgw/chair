@@ -1,4 +1,14 @@
 .models {
     grid-row: 6 / 7;
     grid-column: center-start / center-end;
+
+    margin-bottom: 20rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 10rem 0;
+    }
 }
