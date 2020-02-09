@@ -39,7 +39,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 110vh min-content min-content 60vw 60vw min-content min-content;
+    grid-template-rows: 110vh min-content min-content 60vw 65vw min-content min-content;
     grid-template-columns: [header-start] 18rem [center-start] 1fr [center-1] 1.2fr [center-2] 1.2fr [center-3] 1fr [center-end] 18rem [header-end];
 }
 

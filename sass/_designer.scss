@@ -1,9 +1,42 @@
 .designer__text {
     grid-row: 5 / 6;
     grid-column: center-start / center-2;
+
+    margin: 20rem 10rem;
+    width: 62%;
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    display: grid;
+    grid-template-rows: repeat(4, minmax(min-content, 14rem));
+    align-content: center;
+    align-items: center;
+
+    h2 {
+        // margin-top: 10rem;
+    }
+    
+    .designer__name {
+        margin-top: -4rem;
+    }
+    
+    p {
+        line-height: 2.1;
+    }
+
+    a {
+        transform: translateX(3rem);
+    }
 }
 
 .designer__image {
     grid-row: 5 / 6;
     grid-column: center-2 / center-end;
+
+    margin: 20rem 0;
+
+    img {
+        height: 100%;
+        margin-left: auto;
+    }
 }
