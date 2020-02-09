@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 :root {
-  --color-light: #f7f6ed;
+  --color-light: #f2f2f0;
   --color-beige: #f7f1d9; }
 
 * {
@@ -46,27 +46,36 @@ a:visited {
   color: #000;
   font-size: 2rem;
   font-weight: 600;
-  margin: 10rem 0 auto 4rem;
   display: flex;
   align-items: center;
   transition: .3s all;
-  position: relative; }
+  position: relative;
+  z-index: 99; }
   .view-link::before {
     content: "";
     position: absolute;
-    left: -4rem;
-    width: 9rem;
-    height: 9rem;
     border-radius: 50%;
-    background: var(--color-beige);
     transition: .3s all;
-    z-index: -1; }
+    z-index: -9; }
   .view-link::after {
     content: "\02192";
     margin-left: 1rem;
-    font-size: 4rem;
     font-weight: 300;
     transition: .3s all; }
+  .view-link--1::before {
+    left: -4rem;
+    width: 9rem;
+    height: 9rem;
+    background: var(--color-beige); }
+  .view-link--1::after {
+    font-size: 4rem; }
+  .view-link--2::before {
+    left: -2.6rem;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: white; }
+  .view-link--2::after {
+    font-size: 2rem; }
   .view-link:hover::before {
     height: 2rem;
     width: 100%;
@@ -96,6 +105,8 @@ a:visited {
     width: 65%;
     display: flex;
     flex-direction: column; }
+    .about__content a {
+      margin: 10rem 0 auto 4rem; }
     .about__content h3 {
       margin: 5rem 0; }
     .about__content p {
@@ -110,7 +121,30 @@ a:visited {
 
 .ingrid {
   grid-row: 3 / 4;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  margin-bottom: 30rem; }
+  .ingrid__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem 0; }
+  .ingrid .chairs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 3rem;
+    justify-items: stretch; }
+  .ingrid .chair {
+    background-color: var(--color-light);
+    display: grid;
+    grid-gap: 6rem;
+    justify-items: center; }
+    .ingrid .chair h4 {
+      margin-top: 8rem; }
+    .ingrid .chair__img {
+      width: 48%;
+      margin: 0 auto; }
+    .ingrid .chair a {
+      margin-bottom: 8rem; }
 
 .carousel__text {
   grid-row: 4 / 5;

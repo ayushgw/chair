@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 :root {
-    --color-light: #f7f6ed;
+    --color-light: #f2f2f0;
     --color-beige: #f7f1d9;
 }
 
@@ -67,30 +67,51 @@ a:visited {
     color: #000;
     font-size: 2rem;
     font-weight: 600;
-    margin: 10rem 0 auto 4rem;
     display: flex;
     align-items: center;
     transition: .3s all;
     position: relative;
+    z-index: 99;
 
     &::before {
         content: "";
         position: absolute;
-        left: -4rem;
-        width: 9rem;
-        height: 9rem;
         border-radius: 50%;
-        background: var(--color-beige);
         transition: .3s all;
-        z-index: -1;
+        z-index: -9;
     }
 
     &::after {
         content: "\02192";
         margin-left: 1rem;
-        font-size: 4rem;
         font-weight: 300;
         transition: .3s all;
+    }
+
+    &--1 {
+        &::before {
+            left: -4rem;
+            width: 9rem;
+            height: 9rem;
+            background: var(--color-beige);
+        }
+
+        &::after {
+            font-size: 4rem;
+        }
+    }
+
+    &--2 {
+        &::before {
+            left: -2.6rem;
+            width: 5.5rem;
+            height: 5.5rem;
+            background: white;
+        }
+
+        &::after {
+            font-size: 2rem;
+        }
     }
 
     &:hover {

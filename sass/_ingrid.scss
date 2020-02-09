@@ -1,4 +1,43 @@
 .ingrid {
     grid-row: 3 / 4;
     grid-column: center-start / center-end;
+
+    margin-bottom: 30rem;
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 10rem 0;
+    }
+
+    .chairs {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-gap: 3rem;
+        justify-items: stretch;
+    }
+
+    .chair {
+        background-color: var(--color-light);
+        // padding: 10rem;
+
+        display: grid;
+        grid-gap: 6rem;
+        justify-items: center;
+
+        h4 {
+            margin-top: 8rem;
+        }
+
+        &__img {
+            width: 48%;
+            margin: 0 auto;
+        }
+
+        a {
+            margin-bottom: 8rem;
+        }
+    }
 }
