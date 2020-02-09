@@ -11,6 +11,12 @@
 *::before *::after {
   box-sizing: inherit; }
 
+:focus {
+  outline: none; }
+
+::-moz-focus-inner {
+  border: 0; }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
@@ -22,7 +28,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 110vh min-content min-content 70vw 70vw min-content min-content;
+  grid-template-rows: 110vh min-content min-content 60vw 60vw min-content min-content;
   grid-template-columns: [header-start] 18rem [center-start] 1fr [center-1] 1.2fr [center-2] 1.2fr [center-3] 1fr [center-end] 18rem [header-end]; }
 
 .heading-2 {
@@ -82,6 +88,22 @@ a:visited {
     border-radius: 2rem; }
   .view-link:hover::after {
     margin-left: 2.5rem; }
+
+.btn {
+  box-shadow: none;
+  outline: none;
+  border: 0;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer; }
+
+.btn__icon {
+  background-color: white;
+  width: 7.2rem;
+  height: 7.2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  border-radius: 50%; }
 
 .header {
   grid-row: 1 / 2;
@@ -149,7 +171,46 @@ a:visited {
 .carousel__text {
   grid-row: 4 / 5;
   grid-column: 1 / center-1;
-  background: var(--color-beige); }
+  background-color: var(--color-light); }
+
+.carousel__text-inner {
+  height: 100%;
+  width: 45%;
+  transform: translateX(45%);
+  display: flex;
+  flex-direction: column; }
+  .carousel__text-inner .numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 12rem;
+    margin-bottom: auto; }
+    .carousel__text-inner .numbers p:first-child::after {
+      content: "";
+      position: relative;
+      top: -4px;
+      width: 10rem;
+      height: 2px;
+      background-color: #000;
+      margin: 0 1.5rem;
+      display: inline-block; }
+  .carousel__text-inner h2 {
+    margin-bottom: 7rem;
+    transform: translateX(2.5rem); }
+  .carousel__text-inner .navigation {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12rem; }
+    .carousel__text-inner .navigation button {
+      transition: .2s all; }
+      .carousel__text-inner .navigation button:hover {
+        background-color: var(--color-beige); }
 
 .carousel__image {
   grid-row: 4 / 5;

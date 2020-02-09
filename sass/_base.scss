@@ -23,6 +23,9 @@
     box-sizing: inherit;
 }
 
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
 html {
     box-sizing: border-box;
     font-size: 62.5%; // so that 1rem = 10px
@@ -36,7 +39,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-rows: 110vh min-content min-content 70vw 70vw min-content min-content;
+    grid-template-rows: 110vh min-content min-content 60vw 60vw min-content min-content;
     grid-template-columns: [header-start] 18rem [center-start] 1fr [center-1] 1.2fr [center-2] 1.2fr [center-3] 1fr [center-end] 18rem [header-end];
 }
 
@@ -125,4 +128,22 @@ a:visited {
             margin-left: 2.5rem;
         }
     }
+}
+
+.btn {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+.btn__icon {
+    background-color: white;
+    width: 7.2rem;
+    height: 7.2rem;
+    font-size: 3rem;
+    font-weight: 500;
+    border-radius: 50%;
 }
