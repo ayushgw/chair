@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
+:root {
+  --color-light: #f7f5ea;
+  --color-beige: #f5ebc0; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 110vh min-content min-content 70vw 70vw min-content min-content;
+  grid-template-columns: [header-start] 18rem [center-start] 1fr [center-1] 1.2fr [center-2] 1.2fr [center-3] 1fr [center-end] 18rem [header-end]; }
+
+.header {
+  grid-row: 1 / 2;
+  grid-column: header-start / header-end;
+  background: var(--color-light); }
+
+.about {
+  grid-row: 2 / 3;
+  grid-column: center-start / center-end;
+  background: var(--color-beige); }
+
+.ingrid {
+  grid-row: 3 / 4;
+  grid-column: center-start / center-end; }
+
+.carousel-text {
+  grid-row: 4 / 5;
+  grid-column: 1 / center-1; }
+
+.carousel-image {
+  grid-row: 4 / 5;
+  grid-column: center-1 / -1; }
+
+.designer-text {
+  grid-row: 5 / 6;
+  grid-column: center-start / center-2; }
+
+.designer-image {
+  grid-row: 5 / 6;
+  grid-column: center-2 / center-end; }
+
+.other-models {
+  grid-row: 6 / 7;
+  grid-column: center-start / center-end; }
+
+.footer {
+  grid-row: 7 / 8;
+  grid-column: 1 / -1;
+  padding: 10rem 18rem;
+  background: var(--color-light); }
