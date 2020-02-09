@@ -61,6 +61,15 @@ body {
     font-weight: 700;
 }
 
+.logo {
+    &::before {
+        content: "ZET";
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: 4px;
+    }
+}
+
 a:link,
 a:visited {
     text-decoration: none;
