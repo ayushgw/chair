@@ -43,7 +43,9 @@ body {
     grid-template-columns: [header-start] 18rem [center-start] 1fr [center-1] 1.2fr [center-2] 1.2fr [center-3] 1fr [center-end] 18rem [header-end];
 }
 
-.heading-1 {}
+.heading-1 {
+    font-size: 7.5rem
+}
 
 .heading-2 {
     font-size: 6rem;
