@@ -217,7 +217,12 @@ a:visited {
     writing-mode: sideways-lr;
     text-orientation: mixed;
     font-size: 1.6rem;
-    font-weight: 700; }
+    font-weight: 700;
+    transition: .2s all linear; }
+    .header__next-btn:hover {
+      width: 15rem;
+      height: 5rem;
+      writing-mode: horizontal-tb; }
 
 .about {
   grid-row: 2 / 3;

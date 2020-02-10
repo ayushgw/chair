@@ -1,6 +1,6 @@
 # Chairs - A CSS Grid Project
 
-This repository contains SCSS boilerplate code to quickly get started on building a webpage following a simplified version of the 7-1 pattern.
+This repository contains SCSS boilerplate code to quickly get started on building a webpage following a simplified version of the 7-1 pattern. Inspired from [here](https://dribbble.com/shots/4283610-Chair-Full-Page).
 
 ### Prerequisites
 
